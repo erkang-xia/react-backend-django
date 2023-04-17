@@ -2,7 +2,7 @@
 Customer Management System
 
 ## Project Description
-This project is a full-stack web application for managing customers. It utilizes the Django framework for the backend and React for the frontend. The application enables users to register, authenticate, and manage customers, including listing, creating, updating, and deleting customer records.
+This full-stack web application is designed for managing customer and employee profiles, as well as providing a dictionary service utilizing a third-party API. The Django framework is used for the backend and React for the frontend, with Material-UI and Tailwind CSS for styling The application enables users to register, authenticate, and manage customers, including listing, creating, updating, and deleting customer records.
 
 ### Key Features:
 * User registration and authentication using Django's built-in User model and simple JWT for JSON Web Tokens.
@@ -22,11 +22,4 @@ This project is a full-stack web application for managing customers. It utilizes
 * Axios
 * HTML/CSS
 
-## Resume 
 
-### Customer Management System (Full-Stack Web Application)
-* Developed a full-stack web application for managing customers using Django, Django REST framework, React, and Material-UI.
-* Implemented user registration and authentication using Django's built-in User model and simple JWT for token-based authentication.
-* Designed and developed a RESTful API for customer management, including listing, creating, updating, and deleting customer records.
-* Built an interactive and responsive frontend using React and Material-UI, with Axios for API calls.
-* Utilized role-based access control to ensure secure management of customer data.
