@@ -26,6 +26,12 @@ SECRET_KEY = 'django-insecure-@vabdgiq=qa0#w&*fvz!d3&_md02iyeoz97_dlt--jirf(1)n_
 DEBUG = True
 
 ALLOWED_HOSTS = []
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME':timedelta(minutes=15),
+    'ROTATE_REFRESH_TOKENS':True,
+}
 
 
 # Application definition
@@ -41,6 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':('rest_framework_simplejwt.authentication.JWTAuthentication',)
+}
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
